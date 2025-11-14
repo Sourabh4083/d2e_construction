@@ -42,9 +42,9 @@ export default function ProjectsPage() {
   ];
 
   const excelSamples = [
-    { id: 1, name: "01 - Takeoff Summary", file: "/01-takeoff-Summary.xlsx" },
-    { id: 2, name: "02 - Takeoff Summary", file: "/02-takeoff-Summary.xlsx" },
-    { id: 3, name: "03 - Takeoff Summary", file: "/03-takeoff-Summary.xlsx" },
+    { id: 1, name: "01 - Takeoff Summary", file: "/01-Takeoff-Summary.xlsx" },
+    { id: 2, name: "02 - Takeoff Summary", file: "/02-Takeoff-Summary.xlsx" },
+    { id: 3, name: "03 - Takeoff Summary", file: "/03-Takeoff-Summary.xlsx" },
   ];
 
   return (
@@ -133,7 +133,7 @@ export default function ProjectsPage() {
             <motion.a
               key={excel.id}
               href={excel.file}
-              target="_blank"
+              download
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
